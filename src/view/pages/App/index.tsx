@@ -87,7 +87,7 @@ export function App() {
               </span>
             </label>
 
-            <FileInput.Root>
+            <FileInput.Root className="flex items-start gap-5">
               <FileInput.ImagePreview />
               <FileInput.Trigger />
               <FileInput.Control />
@@ -149,6 +149,7 @@ export function App() {
             <FileInput.Root>
               <FileInput.Trigger />
               <FileInput.Control multiple />
+              <FileInput.FileList />
             </FileInput.Root>
           </div>
 
