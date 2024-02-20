@@ -3,7 +3,7 @@ import { useFileInput } from './Root'
 import { formatBytes } from '../../../utils/format-bytes'
 
 export function FileList() {
-  const { files } = useFileInput()
+  const { files, onDeleteFileSelected } = useFileInput()
 
   return (
     <div className="mt-4 space-y-3">
@@ -38,6 +38,7 @@ export function FileList() {
             <button
               type="button"
               className="ml-auto rounded-md p-2 hover:bg-zinc-50"
+              onClick={() => onDeleteFileSelected(file)}
             >
               <Trash2 className="h-5 w-5 text-zinc-500" />
             </button>
