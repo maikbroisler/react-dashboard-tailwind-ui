@@ -1,6 +1,6 @@
 export function Logo() {
   return (
-    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900">
+    <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
       <svg
         width={32}
         height={32}
@@ -159,7 +159,7 @@ export function Logo() {
           </clipPath>
         </defs>
       </svg>
-      <span className="sr-only">Dashboard UI</span>
+      <span className="sr-only lg:not-sr-only">Dashboard UI</span>
     </strong>
   )
 }
