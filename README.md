@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Dashboard React + TailwindCSS
 
-Currently, two official plugins are available:
+Aplicação desenvolvida utilizando React, Tailwind e RadixUI. Com o objetivo de criar um dashboard acessível e que tivesse a possibilidade de utilizar o tema light/dark. Foi utilizado todos os recursos disponiveis do Tailwind, assim como a biblioteca tailwind variants e tailwind merge para auxiliar na criação dos componentes que possuem variants.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
 
-## Expanding the ESLint configuration
+- Temas dark e light
+- Components;
+  - Input
+  - File Input (Preview e listagem de imagens)
+  - Tabs
+  - Sidebar
+  - Button
+  - Textarea
+  - Theme Switch
+- Responsivo
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalação
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+  git clone https://github.com/maikbroisler/react-dashboard-tailwind-ui.git
+  
+  cd react-dashboard-tailwind-ui
+  
+  npm install or yarn install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Executando a aplicação
+
+Para fazer o deploy desse projeto rode
+
+```bash
+  npm run dev or yarn dev
+```
+
+## Screenshots
+
+![App Screenshot Dark](./assets/screen-dark.png)
+![App Screenshot Light](./assets/screen-light.png)
